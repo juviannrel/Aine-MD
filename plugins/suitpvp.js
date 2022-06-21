@@ -1,6 +1,6 @@
 let timeout = 60000
-let poin = 500
-let poin_lose = -100
+let poin = 9999
+let poin_lose = -999
 let handler = async (m, { conn, usedPrefix }) => {
   conn.suit = conn.suit ? conn.suit : {}
   if (Object.values(conn.suit).find(room => room.id.startsWith('suit') && [room.p, room.p2].includes(m.sender))) throw 'Selesaikan suit mu yang sebelumnya'
